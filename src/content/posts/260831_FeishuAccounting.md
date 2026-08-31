@@ -46,40 +46,13 @@ draft: false
 ### 1.2 数据流向图解
 
 #### 版本一：极速文字记账
-```mermaid
-sequenceDiagram
-    autonumber
-    actor User as 用户 (手机/电脑)
-    participant Auth as 飞书鉴权服务
-    participant Bitable as 飞书多维表格 API
 
-    User->>Auth: 1. POST /auth/v3/tenant_access_token/internal (带 APP_ID, APP_SECRET)
-    Auth-->>User: 返回 tenant_access_token
-    User->>Bitable: 2. POST /bitable/v1/apps/{APP_TOKEN}/tables/{TABLE_ID}/records (写入金额、备注)
-    Bitable-->>User: 返回写入成功 (record_id)
-```
+![260831_02](image/260831_02.png)
 
 #### 版本二：图文结合记账（附带小票/截图凭证）
-```mermaid
-sequenceDiagram
-    autonumber
-    actor User as 用户 (手机/电脑)
-    participant Auth as 飞书鉴权服务
-    participant Drive as 飞书 Drive 素材服务
-    participant Bitable as 飞书多维表格 API
 
-    User->>Auth: 1. POST 换取 tenant_access_token
-    Auth-->>User: 返回 Token
-    alt 附带小票或付款截图
-        User->>User: 2. 图像预处理 (校正方向、转 JPEG、计算文件大小)
-        User->>Drive: 3. POST /drive/v1/medias/upload_all (上传素材，关联 APP_TOKEN)
-        Drive-->>User: 返回 file_token (例如 boxcnxxxx)
-        User->>Bitable: 4. POST 新增记录 (包含金额、备注、[{"file_token": "..."}])
-    else 仅文字记账
-        User->>Bitable: 4. POST 新增记录 (仅包含金额、备注)
-    end
-    Bitable-->>User: 5. 返回写入成功
-```
+![260831_03](image/260831_03.png)
+
 
 ---
 
