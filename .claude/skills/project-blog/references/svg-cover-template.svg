@@ -1,0 +1,37 @@
+<!--
+  SVG 封面模板（1280×720）
+  用法：复制本文件，把下面 TODO 标记处替换成实际内容：
+    - 标题两行（title 里的 text）
+    - 强调色条（accent bar 的 fill 颜色，保持一种一致色，如橙 #F97316）
+    - 副标题（subtitle 的 text）
+    - 终端命令（terminal 里的 text，可增删行）
+  保持视觉语言一致：深色渐变背景 + 白色标题 + macOS 风格终端窗 + 彩色命令。
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+<defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#0F172A" /><stop offset="55%" stop-color="#1E3A8A" /><stop offset="100%" stop-color="#0EA5E9" /></linearGradient></defs>
+<rect width="1280" height="720" fill="url(#g)" />
+<circle cx="1080" cy="110" r="230" fill="#FFFFFF" fill-opacity="0.07" />
+<circle cx="150" cy="660" r="260" fill="#FFFFFF" fill-opacity="0.05" />
+
+<!-- TODO: 标题两行 -->
+<text x="72" y="250" font-family="Arial, Microsoft YaHei, sans-serif" font-size="86" font-weight="800" fill="#FFFFFF">标题第一行</text>
+<text x="72" y="344" font-family="Arial, Microsoft YaHei, sans-serif" font-size="64" font-weight="800" fill="#FFFFFF">标题第二行</text>
+
+<!-- TODO: 强调色条（fill 颜色保持一致色，如橙 #F97316） -->
+<path fill="#F97316" d="M75,380 H185 A3,3 0 0 1 188,383 V383 A3,3 0 0 1 185,386 H75 A3,3 0 0 1 72,383 V383 A3,3 0 0 1 75,380 Z" />
+
+<!-- TODO: 副标题 -->
+<text x="72" y="446" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="26" fill="#FFFFFF" fill-opacity="0.92">副标题</text>
+
+<!-- TODO: 终端命令（可增删；白色/浅蓝=命令提示，琥珀色=斜杠命令） -->
+<g id="terminal">
+  <path fill="#0B1220" stroke="#FFFFFF" stroke-opacity="0.2" d="M742,168 H1158 A14,14 0 0 1 1172,182 V506 A14,14 0 0 1 1158,520 H742 A14,14 0 0 1 728,506 V182 A14,14 0 0 1 742,168 Z" />
+  <circle cx="758" cy="197" r="6" fill="#EF4444" />
+  <circle cx="783" cy="197" r="6" fill="#F59E0B" />
+  <circle cx="808" cy="197" r="6" fill="#22C55E" />
+  <text x="764" y="272" font-family="Consolas, Courier New, monospace" font-size="20" fill="#FFFFFF">$ 命令一</text>
+  <text x="764" y="326" font-family="Consolas, Courier New, monospace" font-size="20" fill="#7DD3FC">$ 命令二</text>
+  <text x="764" y="380" font-family="Consolas, Courier New, monospace" font-size="20" fill="#FBBF24">  /斜杠命令</text>
+  <text x="764" y="434" font-family="Consolas, Courier New, monospace" font-size="20" fill="#7DD3FC">$ 命令三</text>
+</g>
+</svg>

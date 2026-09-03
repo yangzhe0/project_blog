@@ -1,0 +1,7 @@
+interface:
+  display_name: "Project Blog"
+  short_description: "维护博客文章格式与提交规范"
+  default_prompt: "Use $project-blog to create or edit a post while preserving this repository's existing conventions."
+
+policy:
+  allow_implicit_invocation: true
