@@ -9,9 +9,6 @@ node_modules/
 
 # logs
 pnpm-debug.log*
-# npm-debug.log*    # 未使用（项目用 pnpm）
-# yarn-debug.log*   # 未使用
-# yarn-error.log*   # 未使用
 
 # environment variables
 .env
@@ -21,8 +18,3 @@ pnpm-debug.log*
 .DS_Store
 
 .vercel
-
-# 其它包管理器的 lockfile（项目用 pnpm，未使用）
-# package-lock.json
-# bun.lockb
-# yarn.lock
