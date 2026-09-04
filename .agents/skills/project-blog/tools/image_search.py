@@ -50,9 +50,7 @@ def image_search(query: str, count: int = 1) -> str:
     }
 
     try:
-        session = requests.Session()
-        session.trust_env = False
-        res = session.get(url, params=params, timeout=15)
+        res = requests.get(url, params=params, timeout=15)
         res.raise_for_status()
         data = res.json()
     except Exception as e:
