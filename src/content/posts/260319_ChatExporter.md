@@ -10,6 +10,9 @@ draft: false
 
 前几天需要把 Trae 里的一些对话导出来，翻了半天没找到现成的工具，干脆自己写了一个。
 
+![developer terminal code screen](https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixid=M3w4OTk5MTN8MHwxfHNlYXJjaHwxfHxkZXZlbG9wZXIlMjB0ZXJtaW5hbCUyMGNvZGUlMjBzY3JlZW58ZW58MHx8fHwxNzg4NTEyNzIzfDA&ixlib=rb-4.1.0&w=600&h=400&fit=crop&q=80)
+*Photo by [Chris Ried](https://unsplash.com/@cdr6934) on [Unsplash](https://unsplash.com)*
+
 ## 这玩意能干嘛
 
 把 Trae 当前打开的对话导出成三种格式：

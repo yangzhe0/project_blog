@@ -49,6 +49,9 @@ draft: false
 
 凌晨 2 点：回宿舍，路上只有路灯和几个同样拖着步子的同学。
 
+![exhausted tired student desk night](https://images.unsplash.com/photo-1764096534662-a194a348c4a0?ixid=M3w4OTk5MTN8MHwxfHNlYXJjaHwxfHxleGhhdXN0ZWQlMjB0aXJlZCUyMHN0dWRlbnQlMjBkZXNrJTIwbmlnaHR8ZW58MHx8fHwxNzg4NTEyNjg0fDA&ixlib=rb-4.1.0&w=600&h=400&fit=crop&q=80)
+*Photo by [Yen Vu](https://unsplash.com/@yenvu2410) on [Unsplash](https://unsplash.com)*
+
 ---
 
 ## 谁在读研究生？

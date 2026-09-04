@@ -1,22 +1,51 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
-  <defs><linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" stop-color="#211A2E" /><stop offset="75%" stop-color="#6C4AB6" /><stop offset="100%" stop-color="#2AB7CA" /></linearGradient></defs>
-  <g id="background"><rect width="1280" height="720" fill="url(#g)" /><circle cx="1080" cy="120" r="210" fill="#FFFFFF" fill-opacity="0.08" /><circle cx="170" cy="650" r="250" fill="#FFFFFF" fill-opacity="0.06" /></g>
-  <g id="mock-app">
-    <path fill="#FFFFFF" fill-opacity="0.14" stroke="#FFFFFF" stroke-opacity="0.32" d="M734,132 H1126 A14,14 0 0 1 1140,146 V548 A14,14 0 0 1 1126,562 H734 A14,14 0 0 1 720,548 V146 A14,14 0 0 1 734,132 Z" />
-    <path fill="#211A2E" fill-opacity="0.52" d="M734,132 H1126 A14,14 0 0 1 1140,146 V162 A14,14 0 0 1 1126,176 H734 A14,14 0 0 1 720,162 V146 A14,14 0 0 1 734,132 Z" />
-    <circle cx="748" cy="154" r="6" fill="#F59E0B" /><circle cx="770" cy="154" r="6" fill="#22A06B" /><circle cx="792" cy="154" r="6" fill="#2AB7CA" />
-    <path fill="#211A2E" fill-opacity="0.35" d="M758,214 H854 A8,8 0 0 1 862,222 V484 A8,8 0 0 1 854,492 H758 A8,8 0 0 1 750,484 V222 A8,8 0 0 1 758,214 Z" />
-    <path fill="#FFFFFF" fill-opacity="0.22" d="M900,214 H1094 A8,8 0 0 1 1102,222 V252 A8,8 0 0 1 1094,260 H900 A8,8 0 0 1 892,252 V222 A8,8 0 0 1 900,214 Z" />
-    <path fill="#FFFFFF" fill-opacity="0.38" d="M900,286 H1054 A8,8 0 0 1 1062,294 V294 A8,8 0 0 1 1054,302 H900 A8,8 0 0 1 892,294 V294 A8,8 0 0 1 900,286 Z" />
-    <path fill="#FFFFFF" fill-opacity="0.25" d="M900,326 H1074 A8,8 0 0 1 1082,334 V334 A8,8 0 0 1 1074,342 H900 A8,8 0 0 1 892,334 V334 A8,8 0 0 1 900,326 Z" />
-    <path fill="#FFFFFF" fill-opacity="0.32" d="M900,366 H1014 A8,8 0 0 1 1022,374 V374 A8,8 0 0 1 1014,382 H900 A8,8 0 0 1 892,374 V374 A8,8 0 0 1 900,366 Z" />
-    <path d="M862 330 C910 280 954 402 1018 344" fill="none" stroke="#2AB7CA" stroke-width="4" />
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="448" viewBox="0 0 1280 448" role="img" aria-labelledby="svgTitle svgDesc">
+  <title id="svgTitle">Obsidian 小白到大师</title>
+  <desc id="svgDesc">居中小窗优先的技术博客 SVG 封面，完整标题配合抽象几何与环境光。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#07090F"/><stop offset="0.52" stop-color="#0B0E18"/><stop offset="1" stop-color="#10142A"/>
+    </linearGradient>
+    <linearGradient id="accent"><stop stop-color="#A78BFA"/><stop offset="0.5" stop-color="#7C5CFC"/><stop offset="1" stop-color="#45E4E8"/></linearGradient>
+    <radialGradient id="primaryGlow"><stop stop-color="#7C5CFC" stop-opacity="0.38"/><stop offset="0.48" stop-color="#7C5CFC" stop-opacity="0.12"/><stop offset="1" stop-color="#7C5CFC" stop-opacity="0"/></radialGradient>
+    <radialGradient id="secondaryGlow"><stop stop-color="#45E4E8" stop-opacity="0.24"/><stop offset="0.55" stop-color="#45E4E8" stop-opacity="0.07"/><stop offset="1" stop-color="#45E4E8" stop-opacity="0"/></radialGradient>
+    <pattern id="dots" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r="1" fill="#D9DFF2" fill-opacity="0.13"/></pattern>
+    <filter id="blur56" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="56"/></filter>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="180%"><feDropShadow dx="0" dy="8" stdDeviation="14" flood-color="#000" flood-opacity="0.48"/></filter>
+    <clipPath id="clip"><rect width="1280" height="448"/></clipPath>
+  </defs>
+
+  <rect width="1280" height="448" fill="url(#bg)"/>
+  <ellipse cx="640" cy="206" rx="405" ry="210" fill="url(#primaryGlow)" filter="url(#blur56)"/>
+  <ellipse cx="640" cy="410" rx="360" ry="120" fill="url(#secondaryGlow)" filter="url(#blur56)"/>
+
+  <!-- Rich vector frame remains meaningful when the 1280×448 source is center-cropped. -->
+  <g clip-path="url(#clip)" fill="none" pointer-events="none">
+    <ellipse cx="640" cy="224" rx="350" ry="190" stroke="url(#accent)" stroke-width="1.7" stroke-opacity="0.32"/>
+    <ellipse cx="640" cy="224" rx="306" ry="160" stroke="#D7D0FF" stroke-width="1" stroke-opacity="0.12" stroke-dasharray="3 10"/>
+    <path d="M282 99C376 23 472 14 640 14C808 14 904 23 998 99" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+    <path d="M278 346C372 408 477 420 640 420C803 420 908 408 1002 346" stroke="#45E4E8" stroke-opacity="0.40" stroke-width="1.3"/>
+    <path d="M304 26C382 91 390 169 359 224C331 286 345 350 414 410" stroke="#A78BFA" stroke-opacity="0.24"/>
+    <path d="M976 26C898 91 890 169 921 224C949 286 935 350 866 410" stroke="#45E4E8" stroke-opacity="0.24"/>
+    <circle cx="318" cy="70" r="5" fill="#A78BFA" stroke="none"/>
+    <circle cx="962" cy="70" r="5" fill="#45E4E8" stroke="none"/>
+    <circle cx="355" cy="374" r="4" fill="#45E4E8" stroke="none"/>
+    <circle cx="925" cy="374" r="4" fill="#A78BFA" stroke="none"/>
   </g>
-  <g id="title">
-    <text x="72" y="236" font-family="Arial, Microsoft YaHei, sans-serif" font-size="76" font-weight="800" fill="#FFFFFF">Obsidian</text>
-    <text x="72" y="322" font-family="Arial, Microsoft YaHei, sans-serif" font-size="62" font-weight="800" fill="#FFFFFF">小白到大师</text>
-    <path fill="#F59E0B" d="M75,360 H179 A3,3 0 0 1 182,363 V363 A3,3 0 0 1 179,366 H75 A3,3 0 0 1 72,363 V363 A3,3 0 0 1 75,360 Z" />
-    <text x="72" y="420" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="26" fill="#FFFFFF" fill-opacity="0.9">从第一个 Vault 到稳定个人知识系统</text>
-    <text x="72" y="648" font-family="Microsoft YaHei, PingFang SC, Arial, sans-serif" font-size="18" fill="#FFFFFF" fill-opacity="0.72">一套能照着做的操作教程</text>
+  <rect x="354" width="572" height="448" fill="url(#dots)" opacity="0.17"/>
+
+  <!-- All critical content stays in the measured center-crop safe zone x=354..926. -->
+  <g font-family="Inter, 'SF Pro Display', 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" text-anchor="middle">
+    <g filter="url(#shadow)" fill="#F7F8FC" font-weight="780">
+      <text x="640" y="145" font-size="55" letter-spacing="-1.2">Obsidian</text>
+      <text x="640" y="238" font-size="55" letter-spacing="-1.2">小白到大师</text>
+    </g>
+    <text x="640" y="328" fill="#C3CADB" font-size="18" font-weight="440" letter-spacing="0.25">从第一个 Vault 到稳定输出闭环</text>
+    <path d="M500 365H780" stroke="#FFFFFF" stroke-opacity="0.14"/>
+    <path d="M588 365H692" stroke="url(#accent)" stroke-width="3" stroke-linecap="round"/>
+    <text x="640" y="407" fill="#A9B3C9" font-size="12" font-weight="650" letter-spacing="1.8">VAULT NOTES WORKFLOW</text>
   </g>
+
+  <!-- Date is fully inside the real crop; no chopped peripheral words. -->
+  <text x="640" y="432" text-anchor="middle" font-family="Inter, 'Segoe UI', sans-serif" fill="#8D99B2" font-size="10.5" font-weight="650" letter-spacing="2">260602</text>
 </svg>
